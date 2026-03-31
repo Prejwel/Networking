@@ -5,3 +5,17 @@ Benifits -> Anonymity ( hiding my identity -location, IP etc )
             Privacy ( hiding the activity - which websites are visited , what work was done ) 
 -: no log policy VPN is more safe
 
+Types of VPN
+ 1) Site to Site - connects one entire site to another site & is always active.
+                  Its ideal when we have multiple remote sites.
+                  Its used to connect one Head office to a small branch office.
+
+ 2) Remote Access VPN - grants access to a corporate network for only one device.
+                      It requires the Host to have an application on its end to connect to corporate network. (eg: cisco anyconnect )
+
+IP sec - used in site to site
+TLS - used in remote access - uses port 443
+
+
+
+
