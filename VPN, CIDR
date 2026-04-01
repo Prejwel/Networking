@@ -25,7 +25,14 @@ Split tunnel -> only the traffic destined to the corporate network is sent over 
 --------------------------------- 
 ---------------------------------
 
-CIDR 
+CIDR
+-----
+
+CIDR - Classles inter domain routing
+Method to allocate IP's . Lower the CIDR range ,higher the IP's available.
+
+
+
 
 
 
