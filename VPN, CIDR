@@ -1,3 +1,6 @@
+VPN
+---
+
 VPN - Virtual Private Network.
 Purpose -> safe delivary of data across public network
 Working -> VPN  Client installed in the System establishes a VPN Tunnel within the public network which then connects to VPN Server & from there it connects to Company Server.
@@ -22,7 +25,7 @@ Split tunnel -> only the traffic destined to the corporate network is sent over 
 --------------------------------- 
 ---------------------------------
 
-
+CIDR 
 
 
 
