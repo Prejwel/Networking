@@ -14,7 +14,16 @@ Types of VPN
                       It requires the Host to have an application on its end to connect to corporate network. (eg: cisco anyconnect )
 
 IP sec - used in site to site
-TLS - used in remote access - uses port 443
+TLS - used in remote access - uses port 443.
+
+Full Tunnel -> when connected to VPN , all traffic will be routed to the corpotrate network ( browsing Facebook etc )
+Split tunnel -> only the traffic destined to the corporate network is sent over to the VPN , all other traffic is routed as normal.
+            Helps in saving bandwidth & provides privacy to users
+--------------------------------- 
+---------------------------------
+
+
+
 
 
 
