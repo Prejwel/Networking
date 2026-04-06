@@ -28,10 +28,54 @@ Split tunnel -> only the traffic destined to the corporate network is sent over 
 CIDR
 -----
 
-CIDR - Classles inter domain routing
+CIDR - Classless inter domain routing - it helps in avoiding wastage of IP addresses
 Method to allocate IP's . Lower the CIDR range ,higher the IP's available.
 
+In IP V4,  IP adderss consist of total of 32 Bits. ie: 4 octat's
 
+Consider the Notation : 200.10.20.40/28 
+                        => 1st 28 bits of the IP belongs to network part & resolve this
+28 = Mask / No: of bits representing block/network
+
+network ID part consist of 28 bits  ( 11111111 11111111 11111111 11110000 ) 
+Host ID part consist of 4 bits  ( ie: 32 -28 = 4 )
+No: of Host = 2^4 = 16 
+
+Binary value 1111 1111 = 255
+So 1111 0000 = 2^7 + 2^6 + 2^5 + 2^4 + ( 2^3 + 2^2 + 2^1 + 2^0 )
+          = 128 + 64 + 32 + 16 + ( 0 ) = 240
+-: 2^0 =1
+
+11111111 11111111 11111111 11110000 = 255.255.255.240
+
+IP = 200.10.20.40 
+40 in binary = [ 40/2 = 0 bal, 20/2 = 0 bal , 10/2 = 0 bal, 5/2 = 1 bal , 2/2 = 0 bal, 1/2 = 1 bal ] == 101000 == 0010 1000 ( 8+32 = 40 so 2^3 + 2^5 =30 = 00101000 ) 
+
+To get NW ID = 200.10.20.0010 0000 -> what ever bits is after the 1st 28 bits make it 0
+            = 200.10.20.2^5 
+            = 200.10.20.32 
+-> IP 200.10.20.40/28 belongs to the NW 200.10.20.32/28
+
+------------- >>>  ie: Split the IP to binary -> take the 1st 28 bits -> what ever remains after 28 make it 0, resolve the IP to decimal now. This will be the NW of the IP
+
+------------------------------
+Method 2 to find the NW 
+-: Another method to find the network 
+IP given 200.10.20.40/28 
+For 28 , last octat digits = 11110000 , 40 = 00101000 
+
+11110000 AND
+00101000
+--------
+00100000 = 2^5 = 32 
+So the NW is 200.10.20.32/28 
+ie: IP 200.10.20.40/28 belongs to the NW 200.10.20.32/28 
+
+------------------
+Class A -> IP = 0-126 , CIDR = /8 , Default Subnet mask = 255.0.0.0 
+Class B -> IP = 128 - 191 , CIDR = /16 , Default subnet mask = 255.255.0.0 
+Class C -> IP = 192 - 223, CIDR = /24 , Default Subnet mask =255.255.255.0
+-----------------
 
 
 
