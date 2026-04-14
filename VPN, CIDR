@@ -22,8 +22,7 @@ TLS - used in remote access - uses port 443.
 Full Tunnel -> when connected to VPN , all traffic will be routed to the corpotrate network ( browsing Facebook etc )
 Split tunnel -> only the traffic destined to the corporate network is sent over to the VPN , all other traffic is routed as normal.
             Helps in saving bandwidth & provides privacy to users
---------------------------------- 
----------------------------------
+------------------------------------------------------------------
 
 CIDR
 -----
@@ -75,7 +74,16 @@ ie: IP 200.10.20.40/28 belongs to the NW 200.10.20.32/28
 Class A -> IP = 0-126 , CIDR = /8 , Default Subnet mask = 255.0.0.0 
 Class B -> IP = 128 - 191 , CIDR = /16 , Default subnet mask = 255.255.0.0 
 Class C -> IP = 192 - 223, CIDR = /24 , Default Subnet mask =255.255.255.0
------------------
+---------------------------------------------------------------------------
+
+
+SUBNET 
+------
+Layer 3 - Network Layer - Router
+
+Subnets breaks large Network to smaller more managable networks.
+Helps in minimizing the traffic & organized data flow
+Subnet provide direct communication for devices in the same network
 
 
 
