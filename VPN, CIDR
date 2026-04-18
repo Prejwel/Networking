@@ -96,8 +96,8 @@ Class A -> 255.0.0.0  -> (2 ^ 24 = 16million host)
 Class B -> 255.255.0.0 -> ( 2 ^ 16 = 64K host )
 Class C -> 255.255.255.0 -> (2 ^ 8 =256 host )
 
-Network ID -> Every Subnet will have its 1st IP starting as Network ID
-Broadcast ID -> last IP of subnet range . Its used to talk to all other host within that NW
+Network ID -> Every Subnet will have its 1st IP starting as Network ID - usually starts with .0 
+Broadcast ID -> last IP of subnet range . Its used to talk to all other host within that NW. Ends with no: of host + 1
 
 
 
