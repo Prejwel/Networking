@@ -38,8 +38,12 @@ Consider the Notation : 200.10.20.40/28
 
 network ID part consist of 28 bits  ( 11111111 11111111 11111111 11110000 ) 
 Host ID part consist of 4 bits  ( ie: 32 -28 = 4 )
-No: of Host = 2^4 = 16 
+No: of Host = 2^4 -2 = 16 - 2 = 14
 
+-----> no: of subnets = 2^ n, where n =last octat network bits  = 2 ^ 4 = 16 subnets possible 
+-----> no: of host = 2^n -2, where n = host bits ,
+                        2^4 -2 =16-2= 14 ( - 2 bcz 1st IP belongs to Network ID & last belongs to broadcast ID ) 
+-----------------------------------------
 Binary value 1111 1111 = 255
 So 1111 0000 = 2^7 + 2^6 + 2^5 + 2^4 + ( 2^3 + 2^2 + 2^1 + 2^0 )
           = 128 + 64 + 32 + 16 + ( 0 ) = 240
@@ -83,7 +87,17 @@ Layer 3 - Network Layer - Router
 
 Subnets breaks large Network to smaller more managable networks.
 Helps in minimizing the traffic & organized data flow
-Subnet provide direct communication for devices in the same network
+Subnet provide direct communication for devices in the same network.
+
+IP address is divided into Network portion & host portion. 
+Network admins use subnet mask to identify which part represent Network & the host devices.
+Subnet mask for 
+Class A -> 255.0.0.0  -> (2 ^ 24 = 16million host)
+Class B -> 255.255.0.0 -> ( 2 ^ 16 = 64K host )
+Class C -> 255.255.255.0 -> (2 ^ 8 =256 host )
+
+Network ID -> Every Subnet will have its 1st IP starting as Network ID
+Broadcast ID -> last IP of subnet range . Its used to talk to all other host within that NW
 
 
 
