@@ -43,6 +43,7 @@ No: of Host = 2^4 -2 = 16 - 2 = 14
 -----> no: of subnets = 2^ n, where n =last octat network bits  = 2 ^ 4 = 16 subnets possible 
 -----> no: of host = 2^n -2, where n = host bits ,
                         2^4 -2 =16-2= 14 ( - 2 bcz 1st IP belongs to Network ID & last belongs to broadcast ID ) 
+------> No: of IP = 2^n , n = host bits = 2 ^ 4 = 16
 -----------------------------------------
 Binary value 1111 1111 = 255
 So 1111 0000 = 2^7 + 2^6 + 2^5 + 2^4 + ( 2^3 + 2^2 + 2^1 + 2^0 )
@@ -98,6 +99,10 @@ Class C -> 255.255.255.0 -> (2 ^ 8 =256 host )
 
 Network ID -> Every Subnet will have its 1st IP starting as Network ID - usually starts with .0 
 Broadcast ID -> last IP of subnet range . Its used to talk to all other host within that NW. Ends with no: of host + 1
+----------------------------------------
+
+SWITCH 
+
 
 
 
