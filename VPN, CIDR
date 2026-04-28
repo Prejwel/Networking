@@ -101,13 +101,15 @@ Network ID -> Every Subnet will have its 1st IP starting as Network ID - usually
 Broadcast ID -> last IP of subnet range . Its used to talk to all other host within that NW. Ends with no: of host + 1
 ----------------------------------------
 
-HUB 
+HUB
+---
 Purpose - to connect all network devices to an internal network. 
 It accepts ethrenet connections from multiple devices.
 Its considered as non intelligent edvice bcz it has no idea about where the data is to be sent exactly. 
 Data will be sent to all the devices insted of sending it to the target device only. This creates security concerns & unnecessary traffic & it wastes bandwidth 
 
-SWITCH 
+SWITCH
+------
 Work on Layer 2 of the OSI model ( data link layer ).
 layer 2 Works with MAC ( Media Access Control) addresss - > Physical address
 switch is similar to hub & it accepts ethernet connections from network devices
@@ -117,7 +119,15 @@ So, when a  data packet is sent to a switch ,its only directed to the intended d
 HUB & SWITCH is used to exchange data with in LAN. Not used to exchange data outside their network. 
 Hub & switch do not read IP address. 
 
+ROUTER 
+------
 Hub & Switch is used to create networks and Router is used to connect networks
 Router - forwards data from one network to another based on IP address. Its the gateway of a network. 
+Router acts as default gateway.
+
+NAT gateway ->  App in private subnet, if they want to communnicate with 3rd party app in internet, NAT gateway takes the source packet & modifies the IP, it removes the source IP & replaces it with the IP address of NAT gateway.
+
+GATEWAY
+-------
 
 
