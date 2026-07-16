@@ -103,9 +103,9 @@ Broadcast ID -> last IP of subnet range . Its used to talk to all other host wit
 
 HUB
 ---
-Purpose - to connect all network devices to an internal network. 
+Purpose - to connect all network devices on an internal network. 
 It accepts ethrenet connections from multiple devices.
-Its considered as non intelligent edvice bcz it has no idea about where the data is to be sent exactly. 
+Its considered as non intelligent device bcz it has no idea about where the data is to be sent exactly. 
 Data will be sent to all the devices insted of sending it to the target device only. This creates security concerns & unnecessary traffic & it wastes bandwidth 
 
 SWITCH
