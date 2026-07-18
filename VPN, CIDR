@@ -129,5 +129,9 @@ NAT gateway ->  App in private subnet, if they want to communnicate with 3rd par
 
 GATEWAY
 -------
+NW node that connects 2 NW's using diff: protocols together. ( gate btw 2 NW's ). Gateway is called as protocol converter.
+It may be Router, Firewall, server or other device that enables traffic to flow in & out of NW. 
+
+Router  - can communicate btw 2 NW using same Protocol
 
 
