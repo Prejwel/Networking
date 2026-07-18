@@ -124,14 +124,37 @@ ROUTER
 Hub & Switch is used to create networks and Router is used to connect networks
 Router - forwards data from one network to another based on IP address. Its the gateway of a network. 
 Router acts as default gateway.
+works on Layer 3 - NW layer 
+Supports Dynamic routing
 
-NAT gateway ->  App in private subnet, if they want to communnicate with 3rd party app in internet, NAT gateway takes the source packet & modifies the IP, it removes the source IP & replaces it with the IP address of NAT gateway.
 
 GATEWAY
 -------
-NW node that connects 2 NW's using diff: protocols together. ( gate btw 2 NW's ). Gateway is called as protocol converter.
+Gate btw 2 NW's.
+Gateway is a NW node that connects 2 NW's using diff: protocols together. Gateway is called as protocol converter.
 It may be Router, Firewall, server or other device that enables traffic to flow in & out of NW. 
+Does not support dynamic routing
+Works upto layer 5 of OSI model
 
-Router  - can communicate btw 2 NW using same Protocol
+Router - can communicate btw 2 NW using same Protocol 
 
+NAT gateway ->  App in private subnet, if they want to communnicate with 3rd party app in internet, NAT gateway takes the source packet & modifies the IP, it removes the source IP & replaces it with the IP address of NAT gateway.
 
+NAT
+----
+Network address translation.
+NAT is used in routers.
+NAT translates a set of IP addresses to another set of IP addresses. 
+NAT helps to preserve the limited amount of IPV4 addresses that we have around the world.
+
+2 types of IP V4 -> Public & Private 
+Public 
+Publically registered in internet
+We need to have a public IP to go to internet.
+4B public IP address available. So they are limited.
+
+Private 
+Not publically registered.
+Cant access internet using private IP.
+Private IP is only used internally ( inside home or business )
+Router assigns the internal devices a private IP 
